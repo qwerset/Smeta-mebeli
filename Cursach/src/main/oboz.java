@@ -1,4 +1,4 @@
-// ecnfyjds﻿
+// ываыва
 package main;
 
 import java.awt.Color;
