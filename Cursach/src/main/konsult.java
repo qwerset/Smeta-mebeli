@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextPane;
 import javax.swing.UIManager;
 
+//создание класса вывода панели консультации, доступный из любого места проекта
 public class konsult extends JPanel {
 	// создание элемента button типа JButton, доступный для обращения из всего проекта
 	public JButton button;

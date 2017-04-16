@@ -16,15 +16,15 @@ import javax.swing.JPanel;
 
 public class login extends JPanel {
 	
-	// создание элемента textField типа JTextField, доступный для обращения из всего проекта
+	// создание элемента textField типа JTextField, доступным для обращения из всего проекта
 	public JTextField textField;
-	// создание элемента textField типа JTextField, доступный для обращения из всего проекта
+	// создание элемента textField типа JTextField, доступным для обращения из всего проекта
 	public JTextField textField_1;
-	// создание элемента button типа JButton, доступный для обращения из всего проекта
+	// создание элемента button типа JButton, доступнм для обращения из всего проекта
 	public JButton button;
-	// создание элемента button_1 типа JButton, доступный для обращения из всего проекта
+	// создание элемента button_1 типа JButton, доступнм для обращения из всего проекта
 	public JButton button_1;
-	// создание элемента obozr типа JButton, доступный для обращения из всего проекта
+	// создание элемента obozr типа JButton, доступнм для обращения из всего проекта
 	public JButton obozr;
 		
 	public login() {
