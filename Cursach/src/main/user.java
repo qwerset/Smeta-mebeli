@@ -1,4 +1,5 @@
-﻿package main;
+﻿// указание основного пакета данных
+package main;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -14,102 +15,157 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-
+//создание класса для вывода панели пользователей, доступный из любого места проекта
 public class user extends JPanel{
 	
-		
+	// создание метода, делающего текстовое поле доступным из любой части проекта
 	public JTextField textField;
+	// создание метода, делающего надпись доступной из любой части проекта
 	public JLabel label_1;
+	// создание метода, делающего кнопку доступной из любой части проекта
 	public JButton btnNewButton;
+	// создание метода, делающего кнопку доступной из любой части проекта
 	public JButton button;
+	// создание метода, делающего кнопку доступной из любой части проекта
 	public JButton button_1;
+	// создание метода, делающего кнопку доступной из любой части проекта
 	public JButton button_2;
+	// создание метода, делающего кнопку доступной из любой части проекта
 	public JButton b36;
+	// создание метода, делающего кнопку доступной из любой части проекта
 	public JButton kuhnya;
+	// создание метода, делающего флаговую кнопку доступной из любой части проекта
 	public JCheckBoxMenuItem s36;
-	public int tip=0;
-	 //* BUTTONFLAG
 	
+	// объявление целочисленной переменной, отвечающей за выбор категории товаро(0-категоря не выбрана/1,2,3-соответсвующая числу категория)
+	int tip=0;
+	// объявление целочисленного массива, отвечающего за статус кнопок товаров (0-не активирована/1-активирована)
 	int but[]={0,0,0,0,0,0,0};
 	
+	// объявление метода постороения панели для данного класса
 	public user() {
+		
 		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
 		
-		
-		
+		// объявление элемента типа класса JPanel
 		JPanel panel = new JPanel();
+		// задание границ панели
 		panel.setBounds(0, 0, 684, 662);
+		// добавление панели 
 		add(panel);
+		// задание стандартных параметров
 		panel.setLayout(null);
 		
-		// KONSULT
+		// создание новой кнопки для получения консультации и запись в нее текста "Мгновенная консультация"
 		button = new JButton("Мгновенная консультация");
+		// задание границ кнопки
 		button.setBounds(19, 10, 208, 23);
+		// размещение надписи на панели
 		panel.add(button);
+		// задание шрифта теста надписи
 		button.setFont(new Font("Arial", Font.ITALIC, 11));
+		// задание цвета текста в кнопке
 		button.setForeground(new Color(0, 0, 255));
 	
-		//
-		JLabel label = new JLabel("В вошли как: ");
-		label.setBounds(344, 12, 90, 15);
+		// создание новой надписи и запись в нее текста "В вошли как: "
+		JLabel label = new JLabel("Вы вошли как: ");
+		// задание границ надписи
+		label.setBounds(344, 12, 106, 15);
+		// размещение надписи на панели
 		panel.add(label);
+		// задание шрифта теста надписи
 		label.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// задание цвета надписи
 		label.setForeground(new Color(0, 128, 0));
 		
-		// USER NAME
+		// создание новой надписи и запись в нее текста "В вошли как: "
 		label_1 = new JLabel("");
+		// задание границ надписи
 		label_1.setBounds(449, 10, 124, 17);
+		// размещение надписи на панели
 		panel.add(label_1);
+		// задание шрифта теста надписи
 		label_1.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// размещение текста в центра надписи
 		label_1.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		//* LOGOUT
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Выйти"
 		btnNewButton = new JButton("Выйти");
+		// задание границ кнопки
 		btnNewButton.setBounds(583, 9, 88, 23);
+		// размещение надписи на панели
 		panel.add(btnNewButton);
+		// задание цвета текста в кнопке
 		btnNewButton.setForeground(new Color(255, 0, 0));
+		// задание шрифта теста надписи
 		btnNewButton.setFont(new Font("Arial", Font.BOLD, 13));
 		
-		//* CREATE ZAKAZ	
+		// создание новой кнопки для создания заказа и запись в нее текста "Создать заказ"
 		button_2 = new JButton("Создать заказ");
+		// задание границ кнопки
 		button_2.setBounds(345, 622, 139, 23);
+		// размещение надписи на панели
 		panel.add(button_2);
+		// задание шрифта теста надписи
 		button_2.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// задание цвета текста в кнопке
 		button_2.setForeground(Color.BLUE);
 		
-		//* BUTTONS KATEGORY
+		// создание новой кнопки для выбора категории и запись в нее текста "Кухонная мубель"
 		kuhnya = new JButton("Кухонная мубель");
+		// задание границ кнопки
 		kuhnya.setBounds(42, 55, 200, 50);
+		// размещение надписи на панели
 		panel.add(kuhnya);
+		// задание шрифта теста надписи
 		kuhnya.setFont(new Font("Arial", Font.BOLD, 14));
 		
+		// создание новой кнопки для выбора категории и запись в нее текста "Мебель для ванны"
 		JButton vannaya = new JButton("Мебель для ванны");
+		// задание границ кнопки
 		vannaya.setBounds(440, 55, 200, 50);
+		// размещение надписи на панели
 		panel.add(vannaya);
+		// задание шрифта теста надписи
 		vannaya.setFont(new Font("Arial", Font.BOLD, 14));
 		
-		JButton spalnya = new JButton("Спальная мебель\r\n");
+		// создание новой кнопки для выбора категории и запись в нее текста "Спальная мебель"
+		JButton spalnya = new JButton("Спальная мебель");
+		// задание границ кнопки
 		spalnya.setBounds(241, 55, 200, 50);
+		// размещение надписи на панели
 		panel.add(spalnya);
+		// задание шрифта теста надписи
 		spalnya.setFont(new Font("Arial", Font.BOLD, 14));
 		
+		// создание новой кнопки для выбора категории и запись в нее текста "Мебель для ванны"
 		JButton zanaves = new JButton("Выберите категорию товаров!");
+		// задание границ кнопки
 		zanaves.setBounds(42, 126, 598, 422);
+		// размещение надписи на панели
 		panel.add(zanaves);
+		// задание шрифта теста надписи
 		zanaves.setFont(new Font("Arial", Font.BOLD, 16));
+		// выключение атрибута активности кнопки
 		zanaves.setEnabled(false);
-		//* END BUTTONS KATEGORY
-		
-		//* FOR textField.setText(raschet.PRISE
+				
+		// создание новго текстового поля
 		textField = new JTextField();
+		// задание грниц текстового поля
 		textField.setBounds(209, 623, 126, 21);
+		// размещение текстового поля на панели
 		panel.add(textField);
+		// запись в текстовое поле текста "0" 
 		textField.setText("0");
+		// задание заднево фона текстового поля
 		textField.setBackground(Color.WHITE);
+		// установка текста по центру текстового поля
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
+		// задание шрифта текста текстового поля
 		textField.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// отключение атрибута активности текстового поля 
 		textField.setEditable(false);
-		textField.setColumns(10);
+		
 			
 	// =================================1 PRODUCT====================================
 		
@@ -249,7 +305,7 @@ public class user extends JPanel{
 		}});
 		
 		// создание новой надписи из блока элементов 2 продукта и запись в нее текста ""
-		JLabel l32 = new JLabel("Тумба-раковина");
+		JLabel l32 = new JLabel("");
 		// размещение текста надписи по центру
 		l32.setHorizontalAlignment(SwingConstants.CENTER);
 		// задание границ надписи
@@ -412,7 +468,7 @@ public class user extends JPanel{
 	// =================================4 PRODUCT====================================
 		
 		// создание новой надписи из блока элементов 4 продукта и запись в нее текста ""	
-		JLabel l34 = new JLabel("Тумба-раковина");
+		JLabel l34 = new JLabel("");
 		// размещение текста надписи по центру
 		l34.setHorizontalAlignment(SwingConstants.CENTER);
 		// задание границ надписи
@@ -512,7 +568,7 @@ public class user extends JPanel{
 	// =================================5 PRODUCT====================================
 		
 		// создание новой надписи из блока элементов 5 продукта и запись в нее текста ""	
-		JLabel l35 = new JLabel("Тумба-раковина");
+		JLabel l35 = new JLabel("");
 		// размещение текста надписи по центру
 		l35.setHorizontalAlignment(SwingConstants.CENTER);
 		// задание границ надписи
@@ -612,7 +668,7 @@ public class user extends JPanel{
 	// =================================6 PRODUCT====================================
 
 		// создание новой надписи из блока элементов 6 продукта и запись в нее текста ""	
-		JLabel l36 = new JLabel("Тумба-раковина");
+		JLabel l36 = new JLabel("");
 		// размещение текста надписи по центру
 		l36.setHorizontalAlignment(SwingConstants.CENTER);
 		// задание границ надписи
