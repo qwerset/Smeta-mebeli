@@ -57,7 +57,7 @@ public class oboz extends JPanel {
 		button.setFont(new Font("Arial", Font.ITALIC, 11));
 		button.setForeground(new Color(0, 0, 255));
 	
-		// создание новой надписи и запись в нее текста "В вошли как: "
+		// создание новой надписи и запись в нее текста ""
 		label_1 = new JLabel("");
 		// задание границ надписи
 		label_1.setBounds(449, 10, 124, 17);
@@ -68,6 +68,18 @@ public class oboz extends JPanel {
 		// размещение текста в центра надписи
 		label_1.setHorizontalAlignment(SwingConstants.CENTER);
 		
+		// создание новой надписи и запись в нее текста "Вы вошли как: "
+		JLabel label = new JLabel("Вы вошли как: ");
+		// задание границ надписи
+		label.setBounds(344, 12, 106, 15);
+		// размещение надписи на панели
+		oboz.add(label);
+		// задание шрифта теста надписи
+		label.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// задание цвета надписи
+		label.setForeground(new Color(0, 128, 0));
+				
+				
 		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Выйти"
 		btnNewButton = new JButton("Выйти");
 		// задание границ кнопки
