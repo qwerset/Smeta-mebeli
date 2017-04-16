@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-//создание класса для вывода панели пользователей, доступный из любого места проекта
+//создание класса для вывода панели пользователей, доступного из любого места проекта
 public class user extends JPanel{
 	
 	// создание метода, делающего текстовое поле доступным из любой части проекта
