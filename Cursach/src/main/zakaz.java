@@ -1,6 +1,7 @@
 ﻿// указание основного пакета данных
 package main;
 
+// импортирование классов для последующего использования 
 import java.awt.Color;
 import java.awt.Font;
 
