@@ -1,6 +1,7 @@
 // указание основного пакета данных
 package main;
 
+// импортирование классов для последующего использования 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -50,11 +51,17 @@ public class oboz extends JPanel {
 		// задание стандартных параметров
 		oboz.setLayout(null);
 	
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Мгновенная консультация"
 		JButton button = new JButton("Мгновенная консультация");
+		// задание границ кнопки
 		button.setBounds(19, 10, 208, 23);
+		// деактивая атрибута активности
 		button.setEnabled(false);
+		// размещение надписи на панели
 		oboz.add(button);
+		// задание шрифта теста надписи
 		button.setFont(new Font("Arial", Font.ITALIC, 11));
+		// задание цвета текста в кнопке
 		button.setForeground(new Color(0, 0, 255));
 	
 		// создание новой надписи и запись в нее текста ""
@@ -91,42 +98,74 @@ public class oboz extends JPanel {
 		// задание шрифта теста надписи
 		btnNewButton.setFont(new Font("Arial", Font.BOLD, 13));
 	
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Создать заказ"
 		JButton button_7 = new JButton("Создать заказ");
+		// задание границ кнопки
 		button_7.setBounds(345, 622, 139, 23);
+		// блокировка активности кнопки
 		button_7.setEnabled(false);
+		// размещение надписи на панели
 		oboz.add(button_7);
+		// задание шрифта теста надписи
 		button_7.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// задание цвета текста в кнопке
 		button_7.setForeground(Color.BLUE);
 		
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Кухонная мубель"
 		JButton kuhnya = new JButton("Кухонная мубель");
+		// задание границ кнопки
 		kuhnya.setBounds(42, 55, 200, 50);
+		// размещение надписи на панели
 		oboz.add(kuhnya);
+		// задание шрифта теста надписи
 		kuhnya.setFont(new Font("Arial", Font.BOLD, 14));
 		
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Мебель для ванны"
 		vannaya = new JButton("Мебель для ванны");
+		// задание границ кнопки
 		vannaya.setBounds(440, 55, 200, 50);
+		// размещение надписи на панели
 		oboz.add(vannaya);
+		// задание шрифта теста надписи
 		vannaya.setFont(new Font("Arial", Font.BOLD, 14));
 		
-		JButton spalnya = new JButton("Спальная мебель\r\n");
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Спальная мебель"
+		JButton spalnya = new JButton("Спальная мебель");
+		// задание границ кнопки
 		spalnya.setBounds(241, 55, 200, 50);
+		// размещение надписи на панели
 		oboz.add(spalnya);
+		// задание шрифта теста надписи
 		spalnya.setFont(new Font("Arial", Font.BOLD, 14));
 		
+		// создание новой кнопки для выхода из учетной записи и запись в нее текста "Выберите категорию товаров!"
 		JButton zanaves = new JButton("Выберите категорию товаров!");
+		// задание границ кнопки
 		zanaves.setBounds(42, 126, 598, 422);
+		// размещение надписи на панели
 		oboz.add(zanaves);
+		// задание шрифта теста надписи
 		zanaves.setFont(new Font("Arial", Font.BOLD, 16));
+		// блокировка активности кнопки
 		zanaves.setEnabled(false);
 		
+		// создание новго текстового поля
 		textField = new JTextField();
+		// задание грниц текстового поля
 		textField.setBounds(209, 623, 126, 21);
+		// размещение текстового поля на панели
 		oboz.add(textField);
+		// запись в текстовое поле текста "0" 
 		textField.setText("0");
+		// задание заднево фона текстового поля
 		textField.setBackground(Color.WHITE);
+		// установка текста по центру текстового поля
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
+		// задание шрифта текста текстового поля
 		textField.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
+		// отключение атрибута активности текстового поля 
 		textField.setEditable(false);
+		// количество символов в строке 
 		textField.setColumns(10);
 		
 		// =================================1 PRODUCT====================================

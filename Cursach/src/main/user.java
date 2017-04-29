@@ -1,6 +1,7 @@
 ﻿// указание основного пакета данных
 package main;
 
+// импортирование классов для последующего использования 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -165,7 +166,9 @@ public class user extends JPanel{
 		textField.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 13));
 		// отключение атрибута активности текстового поля 
 		textField.setEditable(false);
-		
+		// количество символов в строке 
+		textField.setColumns(10);
+				
 	// =================================1 PRODUCT====================================
 		
 		// создание новой надписи из блока элементов 1 продукта и запись в нее текста ""	

@@ -1,7 +1,7 @@
 ﻿// подключение основного пакета даннах
 package main;
 
-
+//импортирование классов для последующего использования 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
