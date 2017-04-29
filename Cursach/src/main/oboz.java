@@ -1,4 +1,4 @@
-// указание основного пакета данных
+﻿// указание основного пакета данных
 package main;
  
 // импортирование классов для последующего использования 
@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-
+ 
 //создание класса для вывода панели обозревателя, доступного из любого места проекта
 public class oboz extends JPanel {
 

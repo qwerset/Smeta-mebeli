@@ -162,7 +162,7 @@ public class login extends JPanel {
 		// размещение надписи на панели
 		login.add(btnNewButton);
 		// выключение атрибута активности
-		btnNewButton..setEditable(false);
+		btnNewButton.setEnabled(false);
 		// задание цвета текста в кнопке
 		btnNewButton.setForeground(new Color(0, 0, 205));
 		// задание шрифта теста надписи
