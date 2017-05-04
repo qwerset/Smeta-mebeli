@@ -1,6 +1,7 @@
 ﻿// подключение основного пакета даннах
 package main;
 
+import java.applet.Applet;
 // импортирование классов для последующего использования 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -11,46 +12,47 @@ import javax.swing.JFrame;
 
 // формирование апплета
 public class osnovnoy extends JApplet{
-		
-	public static void main(String[] args) { 
-		/** 
-		* Создаем экземпляр окна 
-		*/ 
-		JFrame frame = new JFrame(); 
-		/** 
+	
+	public static void main(String[] args) {
+		/**
+		* Создаем экземпляр окна
+		*/
+	    JFrame frame = new JFrame();
+	    /**
 		* Создаем экзмепляр апплета 
-		* типа класса авторизации 
-		*/ 
-		JApplet app = new osnovnoy(); 
-		/** 
-		* Добавляем апплет на панель содержимого окна 
-		*/ 
-		frame.getContentPane().add(app); 
-		/** 
-		* Устанавливаем размер для окна 
-		*/ 
-		frame.setSize(700,700); 
-		/** 
-		* Инициализируем апплет 
-		*/ 
-		app.init(); 
-		/** 
-		* Запускаем апплет 
-		*/ 
-		app.start(); 
-		/** 
-		* Делаем окно видимым 
-		*/ 
-		frame.setVisible(true); 
-		/** 
-		* Указываем, что при закрытии окна (нажатии на крест) 
-		* происходит выход из программы 
-		*/ 
-		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE); 
-		} 
+		* типа класса авторизации
+		*/
+	    JApplet app = new osnovnoy();
+	    /**
+		* Добавляем апплет на панель содержимого окна
+		*/
+	    frame.getContentPane().add(app);
+	    /**
+		* Устанавливаем размер для окна
+		*/
+	    frame.setSize(700,700);
+	    /**
+		* Инициализируем апплет
+		*/
+	    app.init();
+	    /**
+		* Запускаем апплет
+		*/
+	    app.start();
+	    /**
+		* Делаем окно видимым
+		*/
+	    frame.setVisible(true);
+	    /**
+		* Указываем, что при закрытии окна (нажатии на крест)
+		* происходит выход из программы
+		*/
+	    frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+	  }
+	
 	// создание метода построения аплета
 	public osnovnoy() {
-	
+		
 	// объявление знаения типа класса login(панель авторизации)		
 	login LOG = new login();
 	// задаем размер выводимой панели авторизации
@@ -259,4 +261,6 @@ public class osnovnoy extends JApplet{
 	});
 	
 }
+
+
 }
